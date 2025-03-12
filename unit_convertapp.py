@@ -37,7 +37,7 @@ value = st.number_input(f"Enter Value in {from_unit}", min_value=0.00, format="%
 if st.button("Convert"):
     try:
         if category == "Temperature":
-            # Temperature requires special handling
+            
             if from_unit == "celsius" and to_unit == "fahrenheit":
                 result = (value * 9/5) + 32
             elif from_unit == "fahrenheit" and to_unit == "celsius":
